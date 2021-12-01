@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Recetero</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse show" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <li class="nav-item">
+                    <a class="nav-link active" id="btnHeader1" aria-current="page" href="#/Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="btnHeader2" href="#/Nueva_Receta">Nueva Receta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="btnHeader3" href="#/Ver_Receta">Ver Recetas</a>
+                </li>
+            </ul>
+            <small class="navbar-text text-muted">
+                Versión 1.0.0    
+            </small>
+        </div>
+    </div>
+</nav>
+
+<script>
+    $(document).ready(() => {
+        $("#btnHeader1").click(() => {
+            $("#bodyContainer").load("include/inicio.html");
+        });
+        $("#btnHeader2").click(() => {
+            $("#bodyContainer").load("include/nueva_receta.html");
+        });
+        $("#btnHeader3").click(() => {
+            $("#bodyContainer").load("include/ver_receta.html");
+        });
+    });
+</script>

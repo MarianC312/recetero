@@ -1,0 +1,13 @@
+{
+    "name": "recetero",
+    "version": "1.0.0",
+    "description": "Sistema de recetas",
+    "main": "index.html",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "http-server -p 8456",
+        "sv": "autoreload-server -d ./ -p 8456"
+    },
+    "author": "Mariano Campos",
+    "license": "UNLICENSED"
+}
